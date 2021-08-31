@@ -18,10 +18,10 @@ All data is read-only and can be retrieved from [this API endpoint](https://6033
 
 All application pages and components should follow the [provided design](https://www.sketch.com/s/e1647b30-8066-43dc-bbf3-5b81d5a01bb2).
 
-## Rules
+## Guidelines
 
 * Solution should be written in React
-* You can upload your solution to GitHub or send us a ZIP file with the solution at hiring@tymeshift.com
+* You can upload your solution to GitHub or send us a ZIP file with the solution at careers@tymeshift.com
 * We tried to create a task with a small scope but take all the time you need to feel comfortable with your solution and do it at your own pace
 
 ## What we're looking for
