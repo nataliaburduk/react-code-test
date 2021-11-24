@@ -21,7 +21,7 @@ All application pages and components should follow the [provided design](https:/
 ## Guidelines
 
 * Solution should be written in React
-* You can upload your solution to GitHub or send us a ZIP file with the solution at careers@tymeshift.com
+* You can upload your solution to GitHub or send us a ZIP file with the solution via email (via reply in Breezy)
 * We tried to create a task with a small scope but take all the time you need to feel comfortable with your solution and do it at your own pace
 
 ## What we're looking for
