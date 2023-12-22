@@ -1,0 +1,1 @@
+export const ALL_LOCATION_CARD_SKELETONS_COUNT = 25;
