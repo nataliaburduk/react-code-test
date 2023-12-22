@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as CloseIcon } from '../../../assets/icons/Close.svg';
 import {
   ModalWrapper,

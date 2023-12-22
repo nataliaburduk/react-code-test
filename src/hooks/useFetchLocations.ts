@@ -1,4 +1,3 @@
-// src/hooks/useFetchLocations.ts
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchLocations } from '../redux/actions/locationActions';

@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { AcmeLocations } from '.'; // Update the path
+import { AcmeLocations } from '.';
 import * as hooks from '../../../hooks/useFetchLocations';
 import { render } from '../../../hoc/testingWithRedux';
 import * as actions from '../../../redux/actions/locationActions';
