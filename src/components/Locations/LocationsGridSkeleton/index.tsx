@@ -6,7 +6,7 @@ export const LocationsGridSkeleton = () => (
   <LocationsCards>
     {Array.from({ length: ALL_LOCATION_CARD_SKELETONS_COUNT }).map(
       (_, index) => (
-        <SkeletonCard key={index} />
+        <SkeletonCard key={index} data-testid="location-skeleton-card" />
       )
     )}
   </LocationsCards>

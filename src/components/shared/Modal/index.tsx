@@ -11,11 +11,11 @@ import {
 import { ModalProps } from './types';
 
 export const Modal: React.FC<ModalProps> = ({ title, onClose, children }) => (
-  <ModalWrapper>
+  <ModalWrapper data-testid="modal">
     <ModalContent>
       <ModalHeader>
         <h2>{title}</h2>
-        <CloseIcon onClick={onClose} />
+        <CloseIcon onClick={onClose} data-testid="close-modal" />
       </ModalHeader>
 
       <ModalBody>{children}</ModalBody>

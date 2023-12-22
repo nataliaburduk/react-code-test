@@ -36,8 +36,13 @@ export const LocationCard: React.FC<LocationCardProps> = ({
     <LocationCardWrapper
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => !isSelected && setIsHovered(false)}
+      data-testid="location-card"
     >
-      <EditBtn onClick={onClickEdit} isActive={isHovered}>
+      <EditBtn
+        onClick={onClickEdit}
+        isActive={isHovered}
+        data-testid="edit-location-button"
+      >
         <EditIcon />
       </EditBtn>
 

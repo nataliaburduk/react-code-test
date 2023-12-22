@@ -22,7 +22,9 @@ export const AcmeLocations: React.FC = () => {
       <MainSection>
         {error && <MessageContainer message={ERROR_MESSAGE} />}
         {!error && !isLoaded && <LocationsGridSkeleton />}
-        {isLoaded && !data && <MessageContainer message={NO_LOCATIONS} />}
+        {isLoaded && data.length === 0 && (
+          <MessageContainer message={NO_LOCATIONS} />
+        )}
         {isLoaded && data && <LocationsGrid locations={data} />}
       </MainSection>
     </>

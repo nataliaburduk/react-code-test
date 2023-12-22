@@ -9,6 +9,10 @@ export const fetchLocations: AsyncThunk<
   { state: RootState }
 > = createAsyncThunk('locations/fetch', async (_, { getState }) => {
   const response = await fetch(APIEndpoints.locations);
+  if (!response.ok) {
+    throw new Error(response.statusText);
+  }
+
   const data = await response.json();
   return data;
 });
