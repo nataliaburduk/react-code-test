@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { EditBtnProps } from './types';
 
 export const LocationCardWrapper = styled.div`
   position: relative;
@@ -30,12 +31,12 @@ export const LocationDescription = styled.div`
   }
 `;
 
-export const EditBtn = styled.button`
+export const EditBtn = styled.button<EditBtnProps>`
   z-index: 1;
   position: absolute;
   top: 10px;
   right: 10px;
-  display: flex;
+  display: ${(props) => (props.isActive ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
   border: none;

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { LocationDetails } from '../LocationDetails';
+import { Modal } from '../../shared/Modal';
 import { ReactComponent as EditIcon } from '../../../assets/icons/Edit.svg';
 import {
   LocationCardWrapper,
@@ -7,9 +8,8 @@ import {
   EditBtn,
   LocationDescription,
 } from './styled';
-import { LocationCardProps } from './types';
 import { formatDate } from '../../../utilities/formatDate';
-import { Modal } from '../../shared/Modal';
+import { LocationCardProps } from './types';
 
 export const LocationCard: React.FC<LocationCardProps> = ({
   name,
@@ -26,6 +26,7 @@ export const LocationCard: React.FC<LocationCardProps> = ({
     setViews((prevViews) => ++prevViews);
     setIsSelected(true);
   };
+
   const closeModal = (): void => {
     setIsSelected(false);
     setIsHovered(false);
@@ -36,11 +37,9 @@ export const LocationCard: React.FC<LocationCardProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => !isSelected && setIsHovered(false)}
     >
-      {isHovered && (
-        <EditBtn onClick={onClickEdit}>
-          <EditIcon />
-        </EditBtn>
-      )}
+      <EditBtn onClick={onClickEdit} isActive={isHovered}>
+        <EditIcon />
+      </EditBtn>
 
       <CardTitle>{name}</CardTitle>
       <LocationDetails
