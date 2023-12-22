@@ -1,5 +1,14 @@
 # Tymeshift - React code test
+
 Welcome to Tymeshift's react code test 🧪
+
+## Setup
+
+Install dependencies by running `npm install`
+
+Run server `npm start` and got to http://localhost:3000/
+
+`npm test` to check tests
 
 ## Task description:
 
@@ -20,15 +29,15 @@ All application pages and components should follow the [provided design](https:/
 
 ## Guidelines
 
-* Solution should be written in React
-* You can upload your solution to GitHub or send us a ZIP file with the solution via email (via reply in Breezy)
-* We tried to create a task with a small scope but take all the time you need to feel comfortable with your solution and do it at your own pace
+- Solution should be written in React
+- You can upload your solution to GitHub or send us a ZIP file with the solution via email (via reply in Breezy)
+- We tried to create a task with a small scope but take all the time you need to feel comfortable with your solution and do it at your own pace
 
 ## What we're looking for
 
-* Is it a clean solution that is easy to follow, respects all the specs and the design
-* How you approach and structure the solution
-* How complete and detailed is the solution
+- Is it a clean solution that is easy to follow, respects all the specs and the design
+- How you approach and structure the solution
+- How complete and detailed is the solution
 
 ---
 
